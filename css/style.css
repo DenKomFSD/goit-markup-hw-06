@@ -51,6 +51,21 @@ address {
     padding-right: 16px; 
 }
 
+/* VISUALLY HIDDEN */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+/* /VISUALLY HIDDEN */
+
 /* SECTION */
 
 .section {
@@ -91,8 +106,6 @@ address {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding-top: 16px;
-    padding-bottom: 16px; */
 }
 
 .studio {
@@ -115,6 +128,56 @@ address {
     padding-bottom: 16px;
 }
 
+/* HERO */
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 72px;
+    align-items: center;
+} 
+
+.hero-section {
+    background-color: #2e2f42;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Mobile/Hero-img-bg-m.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding-top: 72px;
+    padding-bottom: 72px;
+} 
+
+
+.main-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-align: center;
+    line-height: 1.1111;
+    color: #ffffff;
+    text-transform: capitalize;
+    padding: 0 66px;
+    }
+/* MAIN BUTTON */
+    .order-cta {
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.50;
+        letter-spacing: 0.04em;
+        color: #ffff;
+        background: #4D5AE5;
+        border-radius: 4px;
+        border: none;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        padding: 16px 32px;
+        min-width: 105px;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
 
 @media screen and (min-width: 320px) {
     .container { 
@@ -124,10 +187,20 @@ address {
         margin: 0 auto;
     }
 
+
+
     /* ==============   HERO BLOCK   ===================== */
+
+
 
     /* ==============   /HERO BLOCK   ===================== */
 
+}
+
+@media screen and (min-resolution: 192dpi) {
+    .hero-section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Mobile/Hero-img-bg-m@2x.jpg);
+    }
 }
 
 
@@ -136,9 +209,6 @@ address {
 @media screen and (min-width: 768px) {
     .container { 
         max-width: 768px;
-        /* padding-left: 16px; 
-        padding-right: 16px; 
-        margin: 0 auto; */
     }
 
     .section {
@@ -146,10 +216,7 @@ address {
         padding-bottom: 112px;
     }
 /* ==============   HEADER   ===================== */
-    /* .menu {
-        padding-top: 0;
-        padding-bottom: 0;
-    } */
+
 
     .nav-list {
         display: flex;
@@ -253,10 +320,38 @@ address {
     /* ==============   /HEADER   ===================== */
 
     /* ==============   HERO BLOCK   ===================== */
+    .hero-content {
+        gap: 36px;
+    } 
+
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Tablet/hero-img-t.jpg);
+        padding-top: 112px;
+        padding-bottom: 112px;
+    } 
+
+    .main-title {
+        /* max-width: 496px; */
+        font-size: 56px;
+        line-height: 1.0714;
+        letter-spacing: 0.02em;
+        text-transform: none;
+        font-style: normal;
+        padding-left: 115px;
+        padding-right: 115px;
+        }
+    .order-cta:focus,
+    .order-cta:hover {
+        background-color: #404BBF;
+        }
     /* ==============   /HERO BLOCK   ===================== */
 }
 
-
+@media screen and (min-resolution: 192dpi) {
+    .hero-section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Tablet/hero-img-t@2x.jpg);
+    }
+}
  /* =============1158px========================== */
 @media screen and (min-width: 1158px) {
     .container { 
@@ -293,13 +388,11 @@ address {
         gap: 40px;
     }
     
-    .navlink-text {
-        display: flex;
-        padding: 24px 0;
-        position: relative;
-    }
     
     .navlink-text {
+        display: block;
+        padding: 24px 0;
+        position: relative;
         font-family: Roboto;
         font-size: 16px;
         font-style: normal;
@@ -367,6 +460,26 @@ address {
     }
     /* ==============/HEADER===================== */
     /* ==============   HERO BLOCK   ===================== */
+    .hero-section {
+        max-width: 1440px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Desktop/hero-d.jpg);
+        padding-top: 188px;
+        padding-bottom: 188px;
+    }
 
+    .hero-content {
+        gap: 48px;
+    }
+
+    .main-title {
+        padding-left: 316px;
+        padding-right: 316px;
+    }
     /* ==============   /HERO BLOCK   ===================== */
+}
+
+@media screen and (min-resolution: 192dpi) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Desktop/hero-d@2x.jpg);
+    }
 }

@@ -109,7 +109,6 @@
     justify-content: center;
     gap: 48px;
     align-items: center;
-
 }
 
 .main-title {
@@ -143,7 +142,6 @@
 .order-cta:focus,
 .order-cta:hover {
     background-color: #404BBF;
-
 }
 
 /* SECOND SECTION */
