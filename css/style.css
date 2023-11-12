@@ -197,7 +197,7 @@ address {
 
 }
 
-@media screen and (min-resolution: 192dpi) {
+@media screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-device-pixel-ratio: 2) {
     .hero-section {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Mobile/Hero-img-bg-m@2x.jpg);
     }
@@ -347,7 +347,7 @@ address {
     /* ==============   /HERO BLOCK   ===================== */
 }
 
-@media screen and (min-resolution: 192dpi) {
+@media screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-device-pixel-ratio: 2) {
     .hero-section {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Tablet/hero-img-t@2x.jpg);
     }
@@ -478,7 +478,7 @@ address {
     /* ==============   /HERO BLOCK   ===================== */
 }
 
-@media screen and (min-resolution: 192dpi) {
+@media screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-device-pixel-ratio: 2) {
     .hero-section {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Desktop/hero-d@2x.jpg);
     }
