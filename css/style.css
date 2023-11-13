@@ -107,12 +107,25 @@ address {
     justify-content: space-between;
     align-items: center;
 }
+.logo-bot {
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    color: #4D5AE5;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+}
 
 .studio {
     font-family: 'Raleway', sans-serif;
     line-height: 1.17;
     color: #2e2f42;
 }
+
+
 
 .header-web {
     display: block;
@@ -333,7 +346,7 @@ address {
         align-items: flex-start;
         text-align: start;
         gap: 8px;
-        width: 288px;
+        width: 100%;
         border: 1px solid #e7e9fc;
         border-top: none; 
     }
@@ -367,6 +380,92 @@ address {
 
     /* ==============   /PORTFOLIO BLOCK    ===================== */
 
+
+    /* ==============   FOOTER BLOCK    ===================== */
+    .last-info {
+        padding-top: 70px;
+        padding-bottom: 70px;
+        background-color: #2e2f42;
+    }
+
+    .footer-dec {
+        display: flex;
+        justify-content: start;
+        width: 100%;
+        flex-direction: column;
+        gap: 72px;
+    }
+
+
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo-bot {
+        display: flex;
+        justify-content: center;
+        padding-top: 17px;
+        padding-bottom: 17px;
+    }
+
+    .studio-footer {
+        font-family: 'Raleway', sans-serif;
+        line-height: 1.17;
+        color: #f4f4fd;
+    }
+
+    .body-text-footer {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #F4F4FD;
+        max-width: 264px;
+    }
+
+    .footer-socials {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .footer-social-text {
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 1.5;
+            letter-spacing: 0.32px;
+            color: #fff;
+    }        
+
+    .f-social-list {
+        display: flex;
+        justify-content: start;
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    .footer-soc-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #4D5AE5;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .footer-soc-link:hover,
+    .footer-soc-link:focus {
+        background-color: #31D0AA;
+    }
+    /* ==============   /FOOTER BLOCK    ===================== */
 
 
 
@@ -782,6 +881,69 @@ address {
     /* ==============   /TEAM BLOCK    ===================== */
 
     /* ==============   PORTFOLIO BLOCK    ===================== */
+
+    .portfolio-content {
+        display: flex;
+        flex-direction: column;
+        padding: 32px 16px;
+        align-items: flex-start;
+        text-align: start;
+        gap: 8px;
+        width: 360px;
+        border: 1px solid #e7e9fc;
+        border-top: none; 
+    }
+    
+    .portfolio-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        row-gap: 48px;
+    }
+    
+    .port-item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-basis: calc((100% - 2*24px) / 3);
+        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .port-item:hover ,
+    .port-item:focus {
+        box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    }
+
+    .team-list-wrapper {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .team-list-text-overlay {
+        position: absolute;
+        display: flex;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #4D5AE5;
+        color: #f4f4fd;
+        box-shadow: none;
+        padding: 40px 32px;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        overflow: auto;
+        transform: translateY(100%);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .port-item:hover .team-list-text-overlay,
+    .port-item:focus .team-list-text-overlay {
+        transform: translateY(0%);
+    }
     /* ==============   /PORTFOLIO BLOCK    ===================== */
 }
 

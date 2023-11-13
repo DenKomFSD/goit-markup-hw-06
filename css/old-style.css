@@ -359,7 +359,7 @@
 
 
 
-.body-text-footer{
+.body-text-footer {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-style: normal;
@@ -368,8 +368,6 @@
     letter-spacing: 0.02em;
     color: #F4F4FD;
     max-width: 264px;
-
-
 }
 
 /* Portfolio content */
@@ -445,7 +443,6 @@
     justify-content: start;
     flex-direction: row;
     align-items: baseline;
-
 }
 .footer-socials {
     display: flex;
