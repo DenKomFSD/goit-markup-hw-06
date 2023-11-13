@@ -383,15 +383,14 @@ address {
 
     /* ==============   FOOTER BLOCK    ===================== */
     .last-info {
-        padding-top: 70px;
-        padding-bottom: 70px;
+        padding-top: 100px;
+        padding-bottom: 100px;
         background-color: #2e2f42;
     }
 
     .footer-dec {
         display: flex;
         justify-content: start;
-        width: 100%;
         flex-direction: column;
         gap: 72px;
     }
@@ -464,6 +463,83 @@ address {
     .footer-soc-link:hover,
     .footer-soc-link:focus {
         background-color: #31D0AA;
+    }
+
+    .ft-icon {
+        fill: #f4f4fd;
+    }
+    
+    .ot-icon {
+        fill: #f4f4fd;
+    }
+
+    .subscribtion {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 16px;
+    }
+
+    .footer-form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 16px;
+        min-width: 100%;
+    }
+    .footer-input-lbl{
+        width: 100%;
+    }
+    .footer-input-field {
+        width: 100%;
+        min-height: 40px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 16px;
+        font-size: 12px;
+        line-height: 1.5;
+        letter-spacing: 0.04em; 
+        background-color: transparent;
+        border-radius: 4px;
+        border: 1px solid #FFF;
+        opacity: 0.3;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        color: #ffffff;
+    }
+    .footer-input-field::placeholder {
+        color: #ffffff;
+        font-family: "Roboto", sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 2em;
+        letter-spacing: 0.04em;
+    }
+
+    .sub-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.5em;
+        letter-spacing: 0.64px;
+        color: #ffff;
+        background: #4D5AE5;
+        border-radius: 4px;
+        border: none;
+        padding: 8px 24px;
+        min-width: 165px;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .sub-btn:focus,
+    .sub-btn:hover {
+        background-color: #404BBF;
     }
     /* ==============   /FOOTER BLOCK    ===================== */
 
@@ -697,6 +773,40 @@ address {
 
 
     /* ==============   /PORTFOLIO BLOCK    ===================== */
+       /* ==============   FOOTER   ===================== */
+    .footer-dec {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 72px;
+        padding-left: 92px;
+        padding-right: 92px;
+    }
+
+    .logo-bot {
+        justify-content: start;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .footer-socials {
+        align-items: start;
+    }
+
+    .subscribtion {
+        align-items: start;
+    }
+
+    .footer-form {
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .footer-input-lbl {
+        width: 264px;
+    }
+
+       /* ==============   /FOOTER   ===================== */
 }
 
 @media screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-device-pixel-ratio: 2) {
@@ -945,6 +1055,32 @@ address {
         transform: translateY(0%);
     }
     /* ==============   /PORTFOLIO BLOCK    ===================== */
+
+    /* ==============   FOOTER    ===================== */
+
+    .footer-dec {
+        display: flex;
+        justify-content: start;
+        flex-direction: row;
+        align-items: baseline;
+        flex-wrap: nowrap;
+    }
+    .footer-socials {
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        margin-right: 80px;
+    }
+    
+    .footer-info {
+        margin-right: 120px;
+    }
+
+    .logo-bot {
+        display: inline-block;
+    }
+    /* ==============   /FOOTER    ===================== */
+
 }
 
 @media screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-device-pixel-ratio: 2) {

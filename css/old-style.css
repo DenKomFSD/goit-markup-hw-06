@@ -443,6 +443,7 @@
     justify-content: start;
     flex-direction: row;
     align-items: baseline;
+    max-width: 1158px;
 }
 .footer-socials {
     display: flex;
@@ -524,7 +525,6 @@
 .sub-btn:focus,
 .sub-btn:hover {
     background-color: #404BBF;
-
 }
 /* FOOTER FORM STYLES */
 .footer-form {
