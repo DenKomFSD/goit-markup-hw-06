@@ -41,7 +41,7 @@
                 </ul>
             </address>
             <div class="mobile-burger">
-                <button class="mobile-btn" type="button" title="Open menu">
+                <button class="mobile-btn" type="button" title="Open menu" data-menu-open>
                     <svg class="burger-icon" width="24" height="24">
                         <use href="./images/icons.svg#open-burger"></use>
                     </svg>
@@ -600,7 +600,7 @@
         </div>
     </footer> -->
     <!--=============== MOBILE MENU ==================================-->
-    <div class="mobile-overlay is-open" data-menu-open>
+    <div class="mobile-overlay"  data-menu>
         <div class="container container-mobile-dec">
             <button class="close-modal-btn" type="button" aria-label="modal close button" data-menu-close>
                 <svg class="x-close" width="8" height="8">
@@ -609,17 +609,59 @@
             </button>
             <nav class="mobile-nav">
                 <ul class="mobile-nav-list">
-                    <li class="list-item obile-list-dec">
+                    <li class="mobile-list-item .current-page">
                         <a class="current-page" href="./index.html">Studio</a>
                     </li>
-                    <li class="list-item">
+                    <li class="mobile-list-item">
                         <a class="" href="">Portfolio</a>
                     </li>
-                    <li class="list-item">
+                    <li class="mobile-list-item">
                         <a class="" href="">Contacts</a>
                     </li>
                 </ul>
             </nav>
+            <address class="mobile-contacts-info ">
+                <ul class="mobile-contacts-list ">
+                    <li class="mobile-list-item contacts-mobile">
+                        <a class="mobile-contact-text" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                    </li>
+                    <li class="mobile-list-item contacts-mobile">
+                        <a class="mobile-contact-text" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                </ul>
+            </address>
+            <div class="mobile-socials">
+                <ul class="m-social-list">
+                    <li class="footer-social-item list-item">
+                        <a href="" class="footer-soc-link">
+                            <svg class="ft-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-instagram-2"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-social-item list-item">
+                        <a href="" class="footer-soc-link">
+                            <svg class="ft-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-twitter-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-social-item list-item">
+                        <a href="" class="footer-soc-link">
+                            <svg class="ft-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-facebook-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-social-item list-item">
+                        <a href="" class="footer-soc-link">
+                            <svg class="ft-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-linkedin-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 
