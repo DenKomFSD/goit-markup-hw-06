@@ -1064,6 +1064,9 @@ address {
         flex-direction: row;
         align-items: baseline;
         flex-wrap: nowrap;
+        row-gap: 0;
+        column-gap: 0;
+        gap: 0;
     }
     .footer-socials {
         display: flex;
